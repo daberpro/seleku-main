@@ -1,0 +1,26 @@
+
+#import {card} from "lib/card.js"
+
+<div id="app">
+	
+	<h1 @id="h1" props="nama">
+		
+		hallo {{nama}}
+
+	</h1>
+
+	<card @id="kl" props="nama"></card>
+
+</div>
+
+<script>
+	
+	import {sum} from "lib/math/sum.js";
+
+	app.render(document.body);
+	find("h1").state.nama = "Seleku "
+	find("kl").state.nama = "daber"
+
+	console.log(sum(90,70))
+
+</script>
